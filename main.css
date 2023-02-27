@@ -1,0 +1,35 @@
+.box {
+    height: 10px;
+    width: 10px;
+    min-width: 1em;
+}
+
+#header {
+    top: 40%;
+}
+
+#main {
+    top: 50%;
+}
+
+#main, #header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 412px) {
+.box {
+        min-width: 0.75em;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .box {
+        min-width: 0.50em;
+    }
+
+    h1 {
+        font-size: x-large;
+    }
+}
